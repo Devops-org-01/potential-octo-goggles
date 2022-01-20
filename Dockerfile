@@ -1,5 +1,6 @@
 FROM ubuntu
 RUN update -y
+RUN apt install tree -y
 ADD . ./app
 EXPOSE 3000
 WORKDIR /app
